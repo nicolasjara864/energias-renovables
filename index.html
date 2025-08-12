@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías Renovables | Futuro Sostenible</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-leaf"></i> Energías Renovables</h1>
+            <p>El futuro de la energía sostenible</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#tipos"><i class="fas fa-solar-panel"></i> Tipos</a></li>
+                <li><a href="#estadisticas"><i class="fas fa-chart-line"></i> Estadísticas</a></li>
+                <li><a href="#beneficios"><i class="fas fa-seedling"></i> Beneficios</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Transformando nuestro futuro energético</h2>
+            <p>Descubre cómo las energías renovables están revolucionando el mundo y combatiendo el cambio climático</p>
+            <a href="#estadisticas" class="btn">Ver estadísticas</a>
+        </div>
+    </section>
+
+    <section id="tipos" class="energy-types">
+        <div class="container">
+            <h2><i class="fas fa-bolt"></i> Tipos de Energías Renovables</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Energía Solar</h3>
+                    <p>Obtenida de la radiación solar mediante paneles fotovoltaicos o térmicos.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Energía Eólica</h3>
+                    <p>Generada por el movimiento de aerogeneradores impulsados por el viento.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-water"></i>
+                    <h3>Hidroeléctrica</h3>
+                    <p>Producida por el movimiento del agua en presas o corrientes fluviales.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Biomasa</h3>
+                    <p>Obtenida de materia orgánica como residuos agrícolas o forestales.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Geotérmica</h3>
+                    <p>Extraída del calor interno de la Tierra mediante yacimientos termales.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Energía Oceánica</h3>
+                    <p>Generada por mareas, olas y diferencias térmicas en los océanos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estadisticas" class="stats">
+        <div class="container">
+            <h2><i class="fas fa-chart-pie"></i> Estadísticas Globales 2023</h2>
+            
+            <div class="chart-container">
+                <canvas id="globalGrowthChart"></canvas>
+            </div>
+            
+            <div class="chart-grid">
+                <div class="chart-item">
+                    <canvas id="renewableShareChart"></canvas>
+                </div>
+                <div class="chart-item">
+                    <canvas id="countryComparisonChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="costTrendChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2><i class="fas fa-globe-europe"></i> Beneficios de las Energías Renovables</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-cloud-sun"></i>
+                    <h3>Reducción de emisiones</h3>
+                    <p>Disminuyen los gases de efecto invernadero, combatiendo el cambio climático.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-infinity"></i>
+                    <h3>Fuentes inagotables</h3>
+                    <p>A diferencia de los combustibles fósiles, no se agotan con el uso.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Generación de empleo</h3>
+                    <p>El sector renovable crea más empleos que los combustibles tradicionales.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-lungs"></i>
+                    <h3>Mejor calidad del aire</h3>
+                    <p>Reducen la contaminación atmosférica y sus efectos en la salud.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Independencia energética</h3>
+                    <p>Los países pueden reducir su dependencia de importaciones de petróleo y gas.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Tecnología en avance</h3>
+                    <p>Innovaciones constantes mejoran eficiencia y reducen costos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Contacto</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Promovemos la transición hacia un futuro energético sostenible mediante información y educación.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#tipos">Tipos de energía</a></li>
+                        <li><a href="#estadisticas">Estadísticas</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Energías Renovables. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="charts.js"></script>
+</body>
+</html>
