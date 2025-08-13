@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Gráfica 1: Crecimiento global de energías renovables
     const ctx1 = document.getElementById('globalGrowthChart').getContext('2d');
-    new Chart(ctx1, {
+   new Chart(ctx1, {
         type: 'line',
         data: {
             labels: Array.from({length: 19}, (_, i) => 2004 + i),

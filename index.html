@@ -189,9 +189,21 @@
         </div>
     </footer>
         
-<link rel="stylesheet" href="styles.css">
+<script src="charts.js"></script>
 
-    
 </body>
 </html>
-<script src="chart.js"></script>
+<DOCTYPE html>
+<html>
+<head>
+    <title>My Chart</title>
+    <!-- Include Chart.js BEFORE your script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <canvas id="myChart"></canvas>
+
+    <!-- Your script that uses Chart -->
+    <script src="chart.js"></script>
+</body>
+</html>
